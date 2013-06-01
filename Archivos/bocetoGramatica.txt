@@ -1,0 +1,20 @@
+S[Simbolo Inicial]
+E(Expresion)
+T(Tipo de Dato)
+B(Bloque)
+D(Declaracion)
+I(Instruccion)
+
+S -> TkProgram B
+E -> TkID
+   | TkString
+   | TkNum
+   | TkNum TkConstruccion TkNum
+   | E = E
+T -> TkInt
+   | TkBool
+   | TkRange
+B -> TkBegin D I B TkEnd
+   | I
+   | TkBegin I B TkEnd
+
