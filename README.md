@@ -1,4 +1,0 @@
-Traductores
-===========
-
-Repositorio para traductores
